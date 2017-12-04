@@ -385,7 +385,12 @@ static const NSTimeInterval CSToastFadeDuration     = 0.2;
         } else if([point caseInsensitiveCompare:CSToastPositionCenter] == NSOrderedSame) {
             return CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2);
         }else if ([point caseInsensitiveCompare:CSToastPositionScreenCenter] == NSOrderedSame){
-            return CGPointMake(self.bounds.size.width / 2, [UIScreen mainScreen].bounds.size.height / 2);
+            CGFloat offset = 32;
+            BOOL isIphoneX = [UIScreen instancesRespondToSelector:@selector(currentMode)] ? [[UIScreen mainScreen] currentMode].size.height==2436 : NO;
+            if (isIphoneX) {
+                offset = 44;
+            }
+            return CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2 - offset);
         }
     } else if ([point isKindOfClass:[NSValue class]]) {
         return [point CGPointValue];

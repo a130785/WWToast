@@ -1,3 +1,4 @@
+@@ -1,377 +0,0 @@
 //
 //  UIView+Toast.h
 //  WWToast
@@ -25,7 +26,7 @@ extern const NSString * CSToastPositionScreenCenter;
  The `showToast:` methods display any view as toast.
  
  */
-@interface UIView (WWToast)
+@interface UIView (Toast)
 
 /**
  Creates and presents a new toast view with a message and displays it with the
@@ -327,7 +328,7 @@ extern const NSString * CSToastPositionScreenCenter;
  views will appear at the same time (potentially overlapping depending
  on their positions). This has no affect on the toast activity view,
  which operates independently of normal toast views. Default is `YES`.
-
+ 
  */
 + (void)setQueueEnabled:(BOOL)queueEnabled;
 

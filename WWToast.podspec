@@ -2,8 +2,8 @@
 Pod::Spec.new do |s|
 
 s.name         = "WWToast"
-s.version      = "1.0"
-s.summary      = "A short description of WWToast."
+s.version      = "1.0.3"
+s.summary      = " WWToast is UIView Toast"
 s.description  = <<-DESC
 this project provide WWToast for iOS developer
 DESC

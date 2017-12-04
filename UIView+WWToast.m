@@ -6,7 +6,7 @@
 //  Copyright © 2017年 wuwei. All rights reserved.
 //
 
-#import "UIView+Toast.h"
+#import "UIView+WWToast.h"
 #import <QuartzCore/QuartzCore.h>
 #import <objc/runtime.h>
 
@@ -49,7 +49,7 @@ static const NSTimeInterval CSToastFadeDuration     = 0.2;
 
 @end
 
-@implementation UIView (Toast)
+@implementation UIView (WWToast)
 
 #pragma mark - Make Toast Methods
 
